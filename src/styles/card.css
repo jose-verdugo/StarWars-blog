@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Wrapper{
+    background-color: aqua;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Card{
+border: 1px solid black;
+width: 20rem;
+height: 20rem;
+}
