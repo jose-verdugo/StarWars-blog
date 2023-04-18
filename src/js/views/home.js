@@ -5,10 +5,13 @@ export const Home = () => {
 	const  [people, setPeople] = useState(null)
 	const  [planets, setPlanets] = useState(null)
 	const  [vehicles, setVehicles] = useState(null)
+	const  [peoplePage, setPeoplePage] = useState(1)
+	const  [planetsPage, setPlanetsPage] = useState(1)
+	const  [vehiclesPage, setVehiclesPage] = useState(1)
 
-	const urlPeople = "https://www.swapi.tech/api/people"
-	const urlPlanets = "https://www.swapi.tech/api/planets"
-	const urlVehicles = "https://www.swapi.tech/api/vehicles"
+	const urlPeople = `https://www.swapi.tech/api/people?page=${peoplePage}&limit=10`
+	const urlPlanets =  `https://www.swapi.tech/api/planets?page=${planetsPage}&limit=10`
+	const urlVehicles =  `https://www.swapi.tech/api/vehicles?page=${vehiclesPage}&limit=10`
 	const getPeople = async () =>{
 		const response = await fetch(urlPeople)
 		const data = await response.json()
@@ -57,15 +60,15 @@ export const Home = () => {
 	useEffect(() =>{
 		getPeople()
 		
-	},[])
+	},[peoplePage])
 	
 	useEffect(() =>{
 		getPlanets()
-	},[])
+	},[planetsPage])
 	
 	useEffect(() =>{
 		getVehicles()
-	},[])
+	},[vehiclesPage])
 
 	return(
 		<div className="text-center mt-5">
@@ -78,6 +81,7 @@ export const Home = () => {
         ))
       ) : ("Cargando...")
     }
+	<button onClick={() => setPeoplePage(peoplePage + 1)}>Next Page</button>
 	<h2>Planets</h2>
 	{
       planets !== null ? (
@@ -86,8 +90,8 @@ export const Home = () => {
         ))
       ) : ("Cargando...")
     }
+	<button onClick={() => setPlanetsPage(planetsPage + 1)}>Next Page</button>
 	<h2>Vehicles</h2>
-
 	{
       vehicles !== null ? (
         vehicles.map((vehicle) => (
@@ -95,6 +99,7 @@ export const Home = () => {
         ))
       ) : ("Cargando...")
     }
+	<button onClick={() => setVehiclesPage(vehiclesPage + 1)}>Next Page</button>
 		</div>
 	)
 }
