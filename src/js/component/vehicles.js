@@ -46,7 +46,7 @@ export const Vehicles = () => {
                   Manufacturer: {vehicle.properties.manufacturer}
                 </li>
               </ul>
-              <Link to={`/details`}>
+              <Link to={`/vehiclesView${vehicle.uid}`}>
                 <button className="Card-btn">Learn More!</button>
               </Link>
               <svg
@@ -75,6 +75,14 @@ export const Vehicles = () => {
         )}
       </main>
       <footer className="Section-footer">
+      {vehiclesPage > 1 ?(
+          <button
+          className="Card-page"
+          onClick={() => setVehiclesPage(vehiclesPage - 1)}
+        >
+          Previous Page
+        </button>
+        ): null }
         <button
           className="Card-page"
           onClick={() => setVehiclesPage(vehiclesPage + 1)}

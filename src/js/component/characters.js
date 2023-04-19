@@ -45,7 +45,7 @@ export const Character = () => {
                   Eye Color: {person.properties.eye_color}
                 </li>
               </ul>
-              <Link to={`/details`}>
+              <Link to={`/characterView${person.uid}`}>
                 <button className="Card-btn">Learn More!</button>
               </Link>
               <svg
@@ -74,6 +74,14 @@ export const Character = () => {
         )}
       </main>
       <footer className="Section-footer">
+        {peoplePage > 1 ?(
+          <button
+          className="Card-page"
+          onClick={() => setPeoplePage(peoplePage - 1)}
+        >
+          Previous Page
+        </button>
+        ): null }
         <button
           className="Card-page"
           onClick={() => setPeoplePage(peoplePage + 1)}

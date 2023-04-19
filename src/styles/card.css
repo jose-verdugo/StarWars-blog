@@ -55,6 +55,7 @@ margin: 2rem 0 0;
     width: 2rem;
     height: 2rem;
     margin: 0 0 0 8.5rem;
+    cursor: pointer;
 }
 
 .Section-footer{
@@ -67,6 +68,7 @@ margin: 2rem 0 0;
 
 .Card-page{
     border: none;
+    margin: 1rem;
     padding: .5rem 1rem;
     border-radius: .5rem;
     background-color: #ffc107;

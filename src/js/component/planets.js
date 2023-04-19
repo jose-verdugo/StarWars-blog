@@ -48,7 +48,7 @@ export const Planets = () => {
                   Terrain: {planet.properties.terrain}
                 </li>
               </ul>
-              <Link to={`/details`}>
+              <Link to={`/planetView${planet.uid}`}>
                 <button className="Card-btn">Learn More!</button>
               </Link>
               <svg
@@ -77,6 +77,14 @@ export const Planets = () => {
         )}
       </main>
       <footer className="Section-footer">
+      {planetsPage > 1 ?(
+          <button
+          className="Card-page"
+          onClick={() => setPlanetsPage(planetsPage - 1)}
+        >
+          Previous Page
+        </button>
+        ): null }
         <button
           className="Card-page"
           onClick={() => setPlanetsPage(planetsPage + 1)}
