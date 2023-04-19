@@ -6,23 +6,14 @@ import { Vehicles } from "../component/vehicles";
 
 export const Home = () => {
 	
-	
-
-
-
-	
-	
-
 	return(
 		<>
 	<h1>Star Wars Blog</h1>
 	<Character/>
-	{/* <Planets/> */}
-	{/* <Vehicles/> */}
+	<Planets/>
+	<Vehicles/>
 		</>
 	)
 }
 
-
-//person.result.properties.name
 //https://starwars-visualguide.com/assets/img/characters/
