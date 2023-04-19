@@ -16,6 +16,10 @@
     width: 100%;
 }
 
+.Section-title{
+    margin: 0 0 0 2rem;
+}
+
 .Card{
 border: 1px solid black;
 width: 22rem;

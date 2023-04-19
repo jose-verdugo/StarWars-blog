@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../styles/home.css";
-import { Character } from "../component/character";
+import { Character } from "../component/characters";
 import { Planets } from "../component/planets";
 import { Vehicles } from "../component/vehicles";
 
@@ -8,7 +8,6 @@ export const Home = () => {
 	
 	return(
 		<>
-	<h1>Star Wars Blog</h1>
 	<Character/>
 	<Planets/>
 	<Vehicles/>

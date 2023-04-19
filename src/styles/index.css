@@ -1,3 +1,41 @@
 /* 
     General Styles
 */
+
+.Container{
+    background: url("../img/starWarsbg.jpg");   
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.Navbar{
+    background-color: black;
+    padding: 1rem 0;
+}
+
+.Navbar-link{
+    text-decoration: none; 
+ }
+
+.Navbar-h1{
+    color: #ffc107;
+    margin: 0 2rem;
+
+}
+
+.Footer{
+    background-color: black;
+    padding: 1rem 0;
+}
+
+.Footer-p{
+    text-align: center;
+    color: white;
+}
+
+.Footer-a{
+    text-decoration: none;
+    color: #ffc107;
+}

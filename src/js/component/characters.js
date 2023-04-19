@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 import "../../styles/card.css";
 import { TailSpin } from "react-loader-spinner";
 
-export const Vehicles = () => {
-  const [vehicles, setVehicles] = useState(null);
-  const [vehiclesPage, setVehiclesPage] = useState(1);
+export const Character = () => {
+  const [people, setPeople] = useState(null);
+  const [peoplePage, setPeoplePage] = useState(1);
 
-  const urlVehicles = `https://www.swapi.tech/api/vehicles?page=${vehiclesPage}&limit=5`;
+  const urlPeople = `https://www.swapi.tech/api/people?page=${peoplePage}&limit=5`;
 
-  const getVehicles = async () => {
-    const response = await fetch(urlVehicles);
+  const getPeople = async () => {
+    const response = await fetch(urlPeople);
     const data = await response.json();
-    console.log(data.results);
 
     const promises = data.results.map(async (el) => {
       const response = await fetch(el.url);
@@ -21,29 +20,29 @@ export const Vehicles = () => {
     });
 
     const results = await Promise.all(promises);
-    setVehicles(results);
+    setPeople(results);
   };
 
   useEffect(() => {
-    getVehicles();
-  }, [vehiclesPage]);
+    getPeople();
+  }, [peoplePage]);
 
   return (
-    <div className="Section">
-      <h2 className="Section-title">Vehicles</h2>
+    <section className="Section">
+      <h2 className="Section-title">Characters</h2>
       <main className="Wrapper">
-        {vehicles !== null ? (
-          vehicles.map((vehicle) => (
-            <div className="Card" key={vehicle.uid}>
+        {people !== null ? (
+          people.map((person) => (
+            <div className="Card" key={person.uid}>
               <img className="Card-img" src="#" alt="" />
-              <h3 className="Card-name">{vehicle.properties.name}</h3>
+              <h3 className="Card-name">{person.properties.name}</h3>
               <ul className="Card-ul">
-                <li className="Card-li">Model: {vehicle.properties.model}</li>
+                <li className="Card-li">Gender: {person.properties.gender}</li>
                 <li className="Card-li">
-                  Vehicle Class: {vehicle.properties.vehicle_class}
+                  Hair Color: {person.properties.hair_color}
                 </li>
                 <li className="Card-li">
-                  Manufacturer: {vehicle.properties.manufacturer}
+                  Eye Color: {person.properties.eye_color}
                 </li>
               </ul>
               <Link to={`/details`}>
@@ -77,11 +76,11 @@ export const Vehicles = () => {
       <footer className="Section-footer">
         <button
           className="Card-page"
-          onClick={() => setVehiclesPage(vehiclesPage + 1)}
+          onClick={() => setPeoplePage(peoplePage + 1)}
         >
           Next Page
         </button>
       </footer>
-    </div>
+    </section>
   );
 };
