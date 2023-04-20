@@ -30,15 +30,15 @@ export const CharacterDetails = () => {
           </div>
           <div className="Details-rigth">
           <h1 className="Details-name">{character.result.properties.name}</h1>
-          <p className="Details-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam erat. Praesent posuere lacinia lacus, sagittis bibendum dui bibendum gravida. Cras egestas massa vitae elit vulputate, sit amet ullamcorper ipsum accumsan. Phasellus quam lectus, molestie vitae felis non, sollicitudin malesuada odio. Quisque eu facilisis nibh, nec tempor sem. Nunc luctus elit at eros blandit lacinia. Nulla neque enim, auctor id lectus a, mollis ullamcorper lacus. Etiam rhoncus tempus tortor vel faucibus. Maecenas cursus fermentum dui eget eleifend. Suspendisse et enim id justo ullamcorper semper a non tortor. Etiam mattis lectus quis elit lacinia sodales.</p>
+          <p className="Details-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam erat. Praesent posuere lacinia lacus, sagittis bibendum dui bibendum gravida. Cras egestas massa vitae elit vulputate, sit amet ullamcorper ipsum accumsan. Phasellus quam lectus, molestie vitae felis non, sollicitudin malesuada odio. Quisque eu facilisis nibh, nec tempor sem. Nunc luctus elit at eros blandit lacinia.</p>
           <ul className="Details-ul">
-            <li className="Details-li">Height: {character.result.properties.height}</li>
-            <li className="Details-li">Mass: {character.result.properties.mass}</li>
-            <li className="Details-li">Hair color: {character.result.properties.hair_color}</li>
-            <li className="Details-li">Skin color: {character.result.properties.skin_color}</li>
-            <li className="Details-li">Eye color: {character.result.properties.eye_color}</li>
-            <li className="Details-li">Birth year: {character.result.properties.birth_year}</li>
-            <li className="Details-li">Gender: {character.result.properties.gender}</li>
+            <li className="Details-li"><b>Height</b>: {character.result.properties.height}</li>
+            <li className="Details-li"><b>Mass</b>: {character.result.properties.mass}</li>
+            <li className="Details-li"><b>Hair color</b>: {character.result.properties.hair_color}</li>
+            <li className="Details-li"><b>Skin color</b>: {character.result.properties.skin_color}</li>
+            <li className="Details-li"><b>Eye color</b>: {character.result.properties.eye_color}</li>
+            <li className="Details-li"><b>Birth year</b>: {character.result.properties.birth_year}</li>
+            <li className="Details-li"><b>Gender</b>: {character.result.properties.gender}</li>
           </ul>
           </div>
         </div>
