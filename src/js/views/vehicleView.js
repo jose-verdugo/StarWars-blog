@@ -9,7 +9,7 @@ export const VehicleDetails = () => {
 
   useEffect(() => {
     const getVehicle = async () => {
-      const response = await fetch(`https://www.swapi.tech/api/planets/${id}`);
+      const response = await fetch(`https://www.swapi.tech/api/vehicles/${id}`);
       const data = await response.json();
       console.log(data);
       console.log(id);
@@ -22,6 +22,7 @@ export const VehicleDetails = () => {
     <>
       {vehicle !== null ?(
         <div>
+          <img src={`https://starwars-visualguide.com/assets/img/vehicles/${id}.jpg`} alt={vehicle.result.properties.name}/>
           <h1>{vehicle.result.properties.name}</h1>
           <Link to={`/`}>
             <button>Go back</button>

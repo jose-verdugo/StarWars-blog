@@ -1,3 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 2500px;
+  margin: auto;
+}
+
+.Section-title {
+  margin: 0 0 0 2rem;
+}
+
+.Card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    height: 17rem;
+    border: 1px solid black;
+    margin: 2rem 0 0;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  .Card-left{
+      width: 17rem;
+      height: 100%;
+      background-color: rgb(239, 233, 233);
+  }
+  
+  .Card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .Card-img--vehicles{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+.Card-rigth{
+    width: 100%;
+}
+
+.Card-name {
+  margin: 0.5rem 0 1rem 2rem;
+  font-size: 1.5rem;
+}
+.Card-ul {
+}
+.Card-li {
+  list-style: none;
+  margin: 0 0 0.25rem 0;
+}
+.Card-btn {
+  margin: 0 0 0 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffc107;
+  color: black;
+}
+
+.Card-buttons{
+    display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+margin: 3rem 0 0;
+}
+
+.Card-like {
+  fill: #ffc107;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+.Section-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.Card-page {
+  border: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #ffc107;
+  color: black;
+}
+
+/* 
+
 
 *{
     margin: 0;
@@ -30,7 +142,7 @@ margin: 2rem 0 0;
 .Card-img{
     width: 100%;
     height: 10rem;
-    background-color: grey;
+    object-fit: cover;
 }
 
 .Card-name{
@@ -73,4 +185,4 @@ margin: 2rem 0 0;
     border-radius: .5rem;
     background-color: #ffc107;
     color: black;
-}
+} */

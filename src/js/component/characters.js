@@ -34,7 +34,10 @@ export const Character = () => {
         {people !== null ? (
           people.map((person) => (
             <div className="Card" key={person.uid}>
-              <img className="Card-img" src="#" alt="" />
+              <div className="Card-left">
+              <img className="Card-img" src={`https://starwars-visualguide.com/assets/img/characters/${person.uid}.jpg`} alt={person.properties.name} />
+              </div>
+              <div className="Card-rigth">
               <h3 className="Card-name">{person.properties.name}</h3>
               <ul className="Card-ul">
                 <li className="Card-li">Gender: {person.properties.gender}</li>
@@ -45,6 +48,7 @@ export const Character = () => {
                   Eye Color: {person.properties.eye_color}
                 </li>
               </ul>
+              <div className="Card-buttons">
               <Link to={`/characterView${person.uid}`}>
                 <button className="Card-btn">Learn More!</button>
               </Link>
@@ -58,6 +62,8 @@ export const Character = () => {
               >
                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
               </svg>
+              </div>
+              </div>
             </div>
           ))
         ) : (

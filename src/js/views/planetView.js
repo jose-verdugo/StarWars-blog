@@ -22,6 +22,7 @@ export const PlanetDetails = () => {
     <>
       {planet !== null ?(
         <div>
+          <img src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} alt={planet.result.properties.name}/>
           <h1>{planet.result.properties.name}</h1>
           <Link to={`/`}>
             <button>Go back</button>
