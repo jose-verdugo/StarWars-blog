@@ -40,12 +40,12 @@ export const Character = () => {
               <div className="Card-rigth">
               <h3 className="Card-name">{person.properties.name}</h3>
               <ul className="Card-ul">
-                <li className="Card-li">Gender: {person.properties.gender}</li>
+                <li className="Card-li"><b>Gender</b>: {person.properties.gender}</li>
                 <li className="Card-li">
-                  Hair Color: {person.properties.hair_color}
+                  <b>Hair Color</b>: {person.properties.hair_color}
                 </li>
                 <li className="Card-li">
-                  Eye Color: {person.properties.eye_color}
+                  <b>Eye Color</b>: {person.properties.eye_color}
                 </li>
               </ul>
               <div className="Card-buttons">

@@ -41,12 +41,12 @@ export const Planets = () => {
               <div className="Card-rigth">
               <h3 className="Card-name">{planet.properties.name}</h3>
               <ul className="Card-ul">
-                <li className="Card-li">Gender: {planet.properties.gender}</li>
+                <li className="Card-li"><b>Population</b>: {planet.properties.population}</li>
                 <li className="Card-li">
-                  Hair Color: {planet.properties.hair_color}
+                 <b>Climate</b>: {planet.properties.climate}
                 </li>
                 <li className="Card-li">
-                  Eye Color: {planet.properties.eye_color}
+                  <b>Terrain</b>: {planet.properties.terrain}
                 </li>
               </ul>
               <div className="Card-buttons">

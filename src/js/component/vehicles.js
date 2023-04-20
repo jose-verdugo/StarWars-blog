@@ -41,12 +41,12 @@ export const Vehicles = () => {
               <div className="Card-rigth">
               <h3 className="Card-name">{vehicle.properties.name}</h3>
               <ul className="Card-ul">
-                <li className="Card-li">Gender: {vehicle.properties.gender}</li>
+                <li className="Card-li"><b>Model</b>: {vehicle.properties.model}</li>
                 <li className="Card-li">
-                  Hair Color: {vehicle.properties.hair_color}
+                  <b>Vehicle class</b>: {vehicle.properties.vehicle_class}
                 </li>
                 <li className="Card-li">
-                  Eye Color: {vehicle.properties.eye_color}
+                  <b>Manufacturer</b>: {vehicle.properties.manufacturer}
                 </li>
               </ul>
               <div className="Card-buttons">

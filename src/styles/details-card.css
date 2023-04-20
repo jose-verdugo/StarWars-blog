@@ -17,6 +17,7 @@
     align-items: center;
     width: 55rem;
     height: 32rem;
+    background-color: white;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
     border-radius: 2rem;
     overflow: hidden;

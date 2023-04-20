@@ -8,6 +8,12 @@
     box-sizing: border-box;
   }
 
+  body{
+        /* background: url('https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center fixed;  */
+        background: url('https://wallpapers-hub.art/wallpaper-images/53084.jpg') no-repeat center center fixed; 
+        background-size: cover; 
+}
+
 .Navbar{
     background-color: black;
     padding: 1rem 0;

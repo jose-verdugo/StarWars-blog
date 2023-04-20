@@ -19,6 +19,7 @@
 
 .Section-title {
   margin: 0 0 0 2rem;
+  color: white;
 }
 
 .Card {
@@ -31,7 +32,9 @@
     margin: 2rem 0 0;
     border-radius: 2rem;
     overflow: hidden;
+    background-color: white;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+    /* box-shadow: 10px 10px 20px 0px rgba(255,193,7,1); */
   }
 
   @media (max-width: 550px) {
