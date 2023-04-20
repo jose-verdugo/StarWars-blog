@@ -1,16 +1,12 @@
-/* 
+
     General Styles
 */
 
-.Container{
-    background: url("../img/starWarsbg.jpg");   
-    /* background-image: url("../img/starWarsbg.jpg");    */
-    background-color: aqua;
-    /* background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%; */
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 .Navbar{
     background-color: black;
@@ -30,6 +26,9 @@
 .Footer{
     background-color: black;
     padding: 1rem 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
 
 .Footer-p{

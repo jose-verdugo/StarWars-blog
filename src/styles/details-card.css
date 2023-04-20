@@ -1,0 +1,46 @@
+
+
+
+.Details{
+    max-width: 100%;
+    height: 88.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Details-card{
+    background-color: crimson;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 65rem;
+}
+.Details-left{}
+.Details-img{}
+.Details-rigth{
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Details-name{}
+.Details-description{}
+.Details-ul{
+    padding: 0;
+}
+.Details-li{
+    list-style: none;
+
+}
+
+.Details-btn{
+    border: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #ffc107;
+  color: black;
+}
