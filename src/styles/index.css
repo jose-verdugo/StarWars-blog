@@ -29,6 +29,10 @@
 
 }
 
+.Navbar-img{
+    width: 8rem;
+}
+
 .Footer{
     background-color: black;
     padding: 1rem 0;
