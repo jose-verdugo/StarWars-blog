@@ -118,6 +118,10 @@ margin: 3rem 0 0;
   cursor: pointer;
 }
 
+.Card-like--red{
+  fill: red;
+}
+
 @media (max-width: 550px) {
   .Card-like{
     margin: 0 1rem 1rem 0;
