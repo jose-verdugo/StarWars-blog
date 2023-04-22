@@ -28,11 +28,6 @@ export const Character = () => {
   useEffect(() => {
     getPeople();
   }, [peoplePage]);
-
-  const handleLikeClick = () => {
-    const likeButton = document.querySelector('.Card-like');
-    likeButton.classList.toggle('Card-like--red');
-  };
   
 
   return (
@@ -71,7 +66,6 @@ export const Character = () => {
                     onClick={() =>{
                       actions.selectId(person);
                       actions.addFavorite();
-                      handleLikeClick();
                     }}
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

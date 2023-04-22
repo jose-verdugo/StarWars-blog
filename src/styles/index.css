@@ -17,7 +17,15 @@
 .Navbar{
     background-color: black;
     padding: 1rem 0;
+    display: flex;
+    flex-flow:row nowrap ;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
+
+
 
 .Navbar-link{
     text-decoration: none; 
@@ -31,6 +39,14 @@
 
 .Navbar-img{
     width: 8rem;
+}
+
+.Navbar-btn{
+    margin: 0 2rem 0;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
 }
 
 .Footer{

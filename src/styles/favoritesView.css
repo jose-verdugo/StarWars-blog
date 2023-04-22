@@ -1,0 +1,67 @@
+
+.Favorite-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 2500px;
+    margin: auto;
+    height: 100vh;
+}
+.Favorite-h1{
+    color: white;
+}
+
+.Fav-card{
+  background-color: aqua;
+  width: 10rem;
+  height: 10rem;
+
+}
+
+.Fav-p{
+  background-color: crimson;
+}
+
+.Card-favorite{
+ 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    height: 17rem;
+    margin: 2rem 0 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: white;
+    /* box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75); */
+    box-shadow: 10px 10px 20px 0px rgba(255,193,7,1);
+    transition: transform .2s ease-in;
+  
+
+  }
+
+  .Card:hover{
+    transform: scale(1.05);
+  }
+
+
+.Card-like {
+  fill: #ffc107;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+.Card-remove{
+  fill: black;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  border: none;
+}

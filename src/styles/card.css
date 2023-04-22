@@ -15,7 +15,9 @@
   margin: auto;
 }
 
-
+.Section{
+  min-height: 33vh;
+}
 
 .Section-title {
   margin: 0 0 0 2rem;

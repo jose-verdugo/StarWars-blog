@@ -1,3 +1,5 @@
+
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -12,10 +14,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 			addFavorite: () => {
 				const store = getStore();
 				const newFavorite = store.idCharacter;
-				setStore({ favorites: [...store.favorites, newFavorite] });
-				console.log(getStore().favorites)
+				if (!store.favorites.includes(newFavorite)) {
+					setStore({ favorites: [...store.favorites, newFavorite] });
+					console.log(getStore().favorites);
+				}
 			},
 			removeFavorite: (fav) => {
+				console.log(fav);
 				const store = getStore();
 				const updatedArray = store.favorites.filter((favorite) => favorite !== fav);
 				setStore({ favorites: updatedArray });
@@ -25,3 +30,4 @@ const getState = ({ getStore, getActions, setStore }) => {
 };
 
 export default getState;
+

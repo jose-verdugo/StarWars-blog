@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext,useState, useEffect } from "react";
+import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import "../../styles/card.css";
 import { TailSpin } from "react-loader-spinner";
@@ -6,6 +7,7 @@ import { TailSpin } from "react-loader-spinner";
 export const Planets = () => {
   const [planets, setPlanets] = useState(null);
   const [planetsPage, setPlanetsPage] = useState(1);
+  const { store, actions } = useContext(Context);
 
   const urlPlanets = `https://www.swapi.tech/api/planets?page=${planetsPage}&limit=5`;
 
@@ -28,9 +30,6 @@ export const Planets = () => {
     getPlanets();
   }, [planetsPage]);
 
-  const handleLikeClick = (event) => {
-    event.currentTarget.classList.toggle('Card-like--red');
-  };
 
   return (
     <section className="Section">
@@ -59,7 +58,10 @@ export const Planets = () => {
               </Link>
               <svg
                     className="Card-like"
-                    onClick={handleLikeClick}
+                    onClick={() =>{
+                      actions.selectId(planet);
+                      actions.addFavorite();
+                    }}
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
