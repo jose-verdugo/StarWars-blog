@@ -107,7 +107,6 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  
   width: 100%;
 margin: 3rem 0 0;
 }
@@ -119,10 +118,38 @@ margin: 3rem 0 0;
   margin: 0 1rem 0 0;
   cursor: pointer;
 }
-
-.Card-like--red{
-  fill: red;
+/* 
+.Card-fav{
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 1px solid #ffc107;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
+
+.Card-fav--active{
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  background-color: #ffc107;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+} */
+
+
 
 @media (max-width: 550px) {
   .Card-like{

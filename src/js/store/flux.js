@@ -24,10 +24,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore();
 				const updatedArray = store.favorites.filter((favorite) => favorite !== fav);
 				setStore({ favorites: updatedArray });
-			},
+			},			
 		}
 	};
-};
-
+}
 export default getState;
 
